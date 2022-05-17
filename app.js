@@ -16,7 +16,7 @@ app.use(express.json())
 
 //routes
 
-app.get("/", (req, res) => res.send("Hola"))
+app.get("/", (req, res) => res.send("Hola desde heroku"))
 
 app.post("/img", upload.single('imagen'), async (req, res) => {
     const imagen = req.file
